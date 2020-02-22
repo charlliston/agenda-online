@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+	<meta charset="UTF-8">
+	<title>Minha Agenda</title>
+	<link rel="icon" href="favicon.ico" type="image/x-icon">
+	<link rel="stylesheet" type="text/css" href="css/reset.css">
+	<link rel="stylesheet" type="text/css" href="css/index.css">
+</head>
+<body>
+	<header>
+		<div class="container">
+			<h2 class="titulo">Minha Agenda</h2>
+		</div>
+	</header>
+	<main>
+		<section class="container">
+			<h2>Lista de Afazeres</h2>
+			<table>
+				<thead>
+					<tr>
+						<th>Título</th>
+						<th>Data</th>
+						<th>Horário</th>
+					</tr>
+				</thead>
+				<tbody id="tabela-tarefas">
+					<tr class="tarefa" id="primeiro-item">
+						<td class="info-titulo">Fazer Café</td>
+						<td class="info-data">09/02/2020</td>
+						<td class="info-horario">09:00</td>
+					</tr>
+
+					<tr class="tarefa" >
+						<td class="info-titulo">Academia</td>
+						<td class="info-data">09/02/2020</td>
+						<td class="info-horario">19:00</td>
+					</tr>
+
+					<tr class="tarefa" >
+						<td class="info-titulo">Entrevista Estágio</td>
+						<td class="info-data">10/02/2020</td>
+						<td class="info-horario">11:00</td>
+					</tr>
+				</tbody>
+			</table>
+		</section>
+	</main>
+
+	<section class="container">
+		<h2 id="titulo-form">Adicionar novo item</h2>
+		<ul id="mensagens-erro"></ul>
+		<form id="form-adiciona">
+		    <div class="grupo">
+		    	<label for="titulo">Título:</label>
+		         <input id="titulo" type="text" name="titulo" placeholder="título da tarefa" class="campo" required> 
+		    </div>
+
+		    <div class="grupo">
+		        <label for="data">Data:</label>
+		        <input id="data" name="data" type="date" placeholder="data da tarefa" class="campo" required>
+		    </div>
+
+		    <div class="grupo">
+		        <label for="horario">Horário:</label>
+		        <input id="horario" name="horario" type="time" placeholder="horário da tarefa" class="campo" required>
+		    </div>
+		    <button id="adicionar-tarefa" class="botao bto-principal">Adicionar</button>
+		</form>
+	</section>
+
+	<script src="js/functions.js"></script>
+</body>
+</html>
